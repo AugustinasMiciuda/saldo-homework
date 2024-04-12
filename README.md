@@ -8,9 +8,11 @@ To run the project you will need working Node.js (at least version 20.11.0) envi
 
 ## Project Structure
 
-`page-objects` contains page objects and components
+`pageobjects` contains page objects and components
 
 `specs` contains test files
+
+`testData` containts test data used in tests
 
 ## Project setup
 
