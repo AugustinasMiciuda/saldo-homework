@@ -40,7 +40,7 @@ export class DatePickerComponent {
         if (date.month) {
             await this.selectMonth(date.month);
         }
-        const canBeSelected = await this.getDayElement(date.day).getAttribute('aria-selected');
-        expect(canBeSelected).toBe('false');
+        const isDayElementDisabled = await this.getDayElement(date.day).getAttribute('aria-disabled');
+        expect(isDayElementDisabled).toBe('true');
     }
 }

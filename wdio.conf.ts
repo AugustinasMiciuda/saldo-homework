@@ -217,8 +217,9 @@ export const config: Options.Testrunner = {
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)
      */
-    // beforeHook: function (test, context, hookName) {
-    // },
+    beforeHook: async function (test, context, hookName) {
+        await browser.setWindowSize(1920, 1080);
+    },
     /**
      * Hook that gets executed _after_ a hook within the suite starts (e.g. runs after calling
      * afterEach in Mocha)

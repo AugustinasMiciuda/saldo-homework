@@ -2,7 +2,7 @@ export class ResultCurrencyTable {
     private get resultsTable() {
         return $('#table-section tbody');
     }
-    //could be an enum
+
     collumnIndex = {
         name: 0,
         unitsPerCurrency: 1,

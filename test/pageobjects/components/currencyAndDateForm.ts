@@ -10,7 +10,7 @@ export class CurrencyAndDateForm {
         return $('#currency-descriptiveText');
     }
 
-    private get confirmBtn() {
+    private get confirmButton() {
         return $('button[type="submit"]');
     }
 
@@ -26,6 +26,6 @@ export class CurrencyAndDateForm {
     }
 
     async clickConfirmButton() {
-        await this.confirmBtn.click();
+        await this.confirmButton.click();
     }
 }

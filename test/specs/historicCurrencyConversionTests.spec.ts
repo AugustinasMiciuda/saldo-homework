@@ -1,14 +1,10 @@
 //import { expect } from '@wdio/globals'
 import currencyTablesPage from '../pageobjects/currencyTablesPage.ts';
-import { eurCurrencyToUsdData, eurCurrencyToGBPData } from '../testData/historicCurrencyTestData.ts';
+import { eurCurrencyToUsdData as testDataUSD, eurCurrencyToGBPData as testDataGBP } from '../testData/historicCurrencyTestData.ts';
 
 describe('Historic currency values', () => {
-    const testDataUSD = eurCurrencyToUsdData;
-    const testDataGBP = eurCurrencyToGBPData;
-
     beforeEach(async () => {
         await currencyTablesPage.open();
-        await browser.setWindowSize(1920, 1080);
         await currencyTablesPage.cookies.closeCookies();
     });
 
