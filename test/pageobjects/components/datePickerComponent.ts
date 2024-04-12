@@ -1,4 +1,4 @@
-import { dateFormat } from '../../testData/historicCurrencyTestData';
+import { DateFormat } from '../../testData/historicCurrencyTestData';
 
 export class DatePickerComponent {
     private get datePickerYearDropdown() {
@@ -23,7 +23,7 @@ export class DatePickerComponent {
     private getDayElement(day: number) {
         return this.datePickerDayElement.$(`div=${day}`);
     }
-    async selectDate(date: dateFormat) {
+    async selectDate(date: DateFormat) {
         await this.selectYear(date.year);
         await this.selectMonth(date.month);
         await this.getDayElement(date.day).click();
