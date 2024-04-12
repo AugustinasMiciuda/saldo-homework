@@ -1,4 +1,3 @@
-//import { expect } from '@wdio/globals'
 import currencyTablesPage from '../pageobjects/currencyTablesPage.ts';
 import { eurCurrencyToUsdData as testDataUSD, eurCurrencyToGBPData as testDataGBP } from '../testData/historicCurrencyTestData.ts';
 
